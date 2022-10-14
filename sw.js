@@ -4,8 +4,8 @@ const CACHE_NAME = "v1_cache_awp";
 //configurar los archivos del cache
 
 var urlToCache = [
-  "./",
-  "./css/style.css",
+  "./", 
+  "./css/style.css", 
   "./images/facebook.png",
   "./images/instagram.png",
   "./images/twiter.png",
@@ -17,8 +17,7 @@ var urlToCache = [
   "./images/landscape.png"
 ];
 
-// Evento install
-// Instalacion del service worker y guardar en cache los recursos estaticos
+
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches
